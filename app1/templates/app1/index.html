@@ -1,0 +1,9 @@
+{% if doctors %}
+    <ul>
+    {% for doctor in doctors %}
+        <li>{{doctor.name}} </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>NO DATA</p>
+{% endif %}
